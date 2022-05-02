@@ -93,3 +93,16 @@
     padding: 15px;
     margin: auto;
   }
+
+  .fail {
+    color: #CC3E36;
+  }
+
+  .text1, .success {
+    color: #04AA6D;
+  }
+
+  .newUsername {
+    text-align: center;
+    color: #CC3E36;
+  }

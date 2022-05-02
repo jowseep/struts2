@@ -17,15 +17,15 @@
             <s:a  class="active" href="%{contact}">Contact</s:a>
             <s:url var="about" action="About"></s:url>
             <s:a href="%{about}">About</s:a>
-            <s:url var="login" action="Login"></s:url>
-            <s:a href="%{login}">Login</s:a>
+            <s:url var="oldLogin" action="oldLogin"></s:url>
+            <s:a href="%{oldLogin}">Login</s:a>
         </div>
     </header>
       
     <main class="main">
       <div class="maintext">
-        <h1>Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <h1 class="text1">This is my contact page.</h1>
+        <p class="lead">Joseph can't come to the phone right now. Why? Because he is busy coding.</p>
         <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
         </p>

@@ -17,15 +17,15 @@
             <s:a href="%{contact}">Contact</s:a>
             <s:url var="about" action="About"></s:url>
             <s:a href="%{about}">About</s:a>
-            <s:url var="newlogin" action="newLogin"></s:url>
-            <s:a class="active" href="%{newlogin}">Login</s:a>
+            <s:url var="oldLogin" action="oldLogin"></s:url>
+            <s:a class="active" href="%{newLogin}">Login</s:a>
         </div>
     </header>
 
     <main class="newloginbody">
-            <s:form action="newLogin" class="signin">
-            <s:textfield key="newUsername" label="Enter your username"/>
-            <s:password key="newPassword" label="Enter your password"/>
+        <s:form action="newLogin" class="signin" theme="css_xhtml">
+            <s:textfield key="newUsername" label="Username" cclass="newUsername"/>
+            <s:password key="newPassword" label="Password"/>
             <s:submit/>
         </s:form>
     </main>

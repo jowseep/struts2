@@ -25,8 +25,8 @@
       
         <main class="main">
           <div class="maintext">
-            <h1>Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 class="text1">This website is built from scratch with Struts 2.</h1>
+            <p class="lead">By creating this simple website, I was able to understand the basics of using Java in dynamic web application with the help of Struts 2. Here, I was able to learn how MVC works and how connected each part is.</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
             </p>

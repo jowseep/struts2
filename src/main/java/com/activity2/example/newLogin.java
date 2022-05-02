@@ -4,21 +4,38 @@ public class newLogin{
     
     String newUsername;
     String newPassword;
+    String[] theUsername = {"joseph","kim","ishi","jazzle","ketty"};
+    String[] thePassword = {"joseph03","kim30","ishi02","jazzle09","ketty01"};
+    boolean isFound = false;
 
     public String execute() {
 
-        if(newUsername.equals("joseph") && newPassword.equals("joseph03")) {
-            return "success";
-        } else if(newUsername.equals("kim") && newPassword.equals("kim30")) {
-            return "success";
-        } else if(newUsername.equals("ishi") && newPassword.equals("ishi02")) {
-            return "success";
-        } else if(newUsername.equals("jazzle") && newPassword.equals("jazzle09")) {
-            return "success";
-        } else if(newUsername.equals("ketty") && newPassword.equals("ketty01")) {
-            return "success";
+        for(int i=0;i<5;i++) {
+            if(newUsername.equals(theUsername[i])) {
+                if(newPassword.equals(theUsername[i])) {
+                    isFound = true;
+                }
+            }
         }
-        return "fail";
+
+        if(isFound==true) {
+            return "success";
+        } else {
+            return "fail";
+        }
+
+        /*if(newUsername.equals(theUsername[0]) && newPassword.equals(thePassword[0])) {
+            return "success";
+        } else if(newUsername.equals(theUsername[1]) && newPassword.equals(thePassword[1])) {
+            return "success";
+        } else if(newUsername.equals(theUsername[2]) && newPassword.equals(thePassword[2])) {
+            return "success";
+        } else if(newUsername.equals(theUsername[3]) && newPassword.equals(thePassword[3])) {
+            return "success";
+        } else if(newUsername.equals(theUsername[4]) && newPassword.equals(thePassword[4])) {
+            return "success";
+        }*/
+
     }
 
     public String getNewUsername() {
@@ -36,5 +53,23 @@ public class newLogin{
     public void setNewPassword(String newPassword) {
         this.newPassword = newPassword;
     }
+
+    public String[] getTheUsername() {
+        return theUsername;
+    }
+
+    public void setTheUsername(String[] theUsername) {
+        this.theUsername = theUsername;
+    }
+
+    public String[] getThePassword() {
+        return thePassword;
+    }
+
+    public void setThePassword(String[] thePassword) {
+        this.thePassword = thePassword;
+    }
+
+    
 
 }

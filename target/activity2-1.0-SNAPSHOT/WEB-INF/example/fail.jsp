@@ -16,13 +16,13 @@
                 <s:url var="contact" action="Contact"></s:url>
                 <s:a href="%{contact}">Contact</s:a>
                 <s:url var="about" action="About"></s:url>
-                <s:a class="active" href="%{about}">About</s:a>
-                <s:url var="login" action="Login"></s:url>
-                <s:a href="%{login}">Login</s:a>
+                <s:a href="%{about}">About</s:a>
+                <s:url var="oldLogin" action="oldLogin"></s:url>
+                <s:a href="%{oldLogin}">Login</s:a>
             </div>
         </header>
         <main class="main">
-            <p class="maintext">Login failed. Please try again.</p>
+            <p class="maintext"><span class="fail">Login failed. Please try again.</span></p>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

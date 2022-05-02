@@ -16,13 +16,13 @@
                 <s:url var="contact" action="Contact"></s:url>
                 <s:a href="%{contact}">Contact</s:a>
                 <s:url var="about" action="About"></s:url>
-                <s:a class="active" href="%{about}">About</s:a>
+                <s:a href="%{about}">About</s:a>
                 <s:url var="login" action="Login"></s:url>
                 <s:a href="%{login}">Logout</s:a>
             </div>
         </header>
         <main class="main">
-            <p class="maintext">Log in successful</p>
+            <p class="maintext"><span class="success">Log in successful</span></p>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
