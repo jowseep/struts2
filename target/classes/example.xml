@@ -38,5 +38,14 @@
             <result>/WEB-INF/example/Contact.jsp</result>
         </action>
 
+        <action name="oldLogin" class="com.activity2.example.oldLogin">
+            <result>/WEB-INF/example/newLogin.jsp</result>
+        </action>
+
+        <action name="newLogin" class="com.activity2.example.newLogin">
+            <result name="success">/WEB-INF/example/profile.jsp</result>
+            <result name="fail">/WEB-INF/example/fail.jsp</result>
+        </action>
+
     </package>
 </struts>

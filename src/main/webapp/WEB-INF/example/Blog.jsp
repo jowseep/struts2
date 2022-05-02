@@ -18,6 +18,8 @@
             <s:a href="%{contact}">Contact</s:a>
             <s:url var="about" action="About"></s:url>
             <s:a href="%{about}">About</s:a>
+            <s:url var="login" action="Login"></s:url>
+            <s:a href="%{login}">Login</s:a>
         </div>
     </header>      
       <main>
@@ -27,8 +29,8 @@
               <h1 class="fw-light">Hello, Blog. Welcome to my guys.</h1>
               <p class="lead text-muted">Since I was a kind, I always love to travel and the thought of exploring places I've never been to excites me all the time. I also love to taste all kinds of foods in all cultures.</p>
               <p>
-                <a href="#" class="btn btn-primary my-2">Travel Blog</a>
-                <a href="#" class="btn btn-secondary my-2">Food Blog</a>
+                <a href="#" class="btn btn-primary my-2">Travel</a>
+                <a href="#" class="btn btn-secondary my-2">Food</a>
               </p>
             </div>
           </div>

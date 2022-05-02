@@ -17,6 +17,8 @@
             <s:a  class="active" href="%{contact}">Contact</s:a>
             <s:url var="about" action="About"></s:url>
             <s:a href="%{about}">About</s:a>
+            <s:url var="login" action="Login"></s:url>
+            <s:a href="%{login}">Login</s:a>
         </div>
     </header>
       
