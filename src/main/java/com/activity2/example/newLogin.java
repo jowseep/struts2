@@ -10,11 +10,17 @@ public class newLogin{
 
     public String execute() {
 
-        for(int i=0;i<5;i++) {
+        /*for(int i=0;i<5;i++) {
             if(newUsername.equals(theUsername[i])) {
                 if(newPassword.equals(theUsername[i])) {
                     isFound = true;
                 }
+            }
+        }*/
+
+        for(int i=0;i<theUsername.length;i++) {
+            if(newUsername.equals(theUsername[i]) && newPassword.equals(thePassword[i])) {
+                isFound = true;
             }
         }
 
@@ -69,7 +75,5 @@ public class newLogin{
     public void setThePassword(String[] thePassword) {
         this.thePassword = thePassword;
     }
-
-    
 
 }
