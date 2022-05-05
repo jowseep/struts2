@@ -21,8 +21,13 @@
                 <s:a href="%{oldLogin}">Login</s:a>
             </div>
         </header>
-        <main class="main">
-            <p class="maintext"><span class="fail">Login failed. Please try again.</span></p>
+        <p class="failText"><span class="fail">Login failed. Please try again.</span></p>
+        <main class="newloginbody">
+            <s:form action="newLogin" class="signin" theme="css_xhtml">
+                <s:textfield key="newUsername" class="newUsername" placeholder="Username"/>
+                <s:password key="newPassword" placeholder="Password"/>
+                <s:submit class="submitBtn"/>
+            </s:form>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

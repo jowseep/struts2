@@ -22,12 +22,11 @@
         </div>
     </header>
 
-    <h2 class="login">Please log in</h2>
     <main class="newloginbody">
         <s:form action="newLogin" class="signin" theme="css_xhtml">
-            <s:textfield key="newUsername" label="Username" class="newUsername"/>
-            <s:password key="newPassword" label="Password"/>
-            <s:submit/>
+            <s:textfield key="newUsername" class="newUsername" placeholder="Username"/>
+            <s:password key="newPassword" placeholder="Password"/>
+            <s:submit class="submitBtn"/>
         </s:form>
     </main>
       

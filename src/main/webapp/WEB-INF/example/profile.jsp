@@ -10,7 +10,7 @@
         <header>
             <div class="topnav">
                 <s:url var="home" action="index"></s:url>
-                <s:a href="%{home}">Home</s:a>
+                <s:a class="active" href="%{home}">Profile</s:a>
                 <s:url var="blog" action="Blog"></s:url>
                 <s:a href="%{blog}">Blog</s:a>
                 <s:url var="contact" action="Contact"></s:url>
@@ -21,16 +21,32 @@
                 <s:a href="%{oldLogin}">Logout</s:a>
             </div>
         </header>
-        <main>
-            <h1>Firstname:</h1>
+        <main class="mainProfile">
+            <!-- since the matching information is already stored in accountFound, we can then access its attributes -->
+            <p>Firstname:</p>
             <span><s:property value="accountFound.firstName"/></span>
-            <h1>Lastname:</h1>
+            <p>Lastname:</p>
             <span><s:property value="accountFound.lastName"/></span>
-            <h1>Birthdate:</h1>
+            <p>Birthdate:</p>
             <span><s:property value="accountFound.birthDate"/></span>
-            <h1>Bio:</h1>
+            <p>Bio:</p>
             <span><s:property value="accountFound.bio"/></span>
         </main>
+
+        <div class="mainProfile">
+            <s:set var="typeAccount" value="accountFound.accountType"/>
+            <h1><s:property value="#typeAccount"></s:property></h1>
+            <!-- ang accountFound.accountType is stored na siya sa typeAccount so no need to reiterate when accessing-->
+            <s:if test='%{#typeAccount == "admin"}'>
+                <p>Admin information</p>
+                <p>Number of booked seats: 754</p>
+                <p>Revenue over the last 2 months: P866,491.43</p>
+                <p>Growth for the last month: 101%</p>
+            </s:if>
+            <s:else>
+                <p>Refer a friend now!</p>
+            </s:else>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -17,6 +17,12 @@
     padding-top: 20%;
 }
 
+.failText {
+  font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -80,11 +86,17 @@
   /*this is for the new log in*/
 
   .newloginbody {
+    margin-top: 15vw;
     display: flex;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5f5f5;
+    width: 25vw;
+    margin-left: 35vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+  }
+
+  div br {
+    display: none;
   }
   
   .signin {
@@ -92,11 +104,6 @@
     max-width: 330px;
     padding: 15px;
     margin: auto;
-  }
-
-  .login {
-    display: flex;
-    text-align: center;
   }
 
   .fail {
@@ -107,7 +114,38 @@
     color: #04AA6D;
   }
 
-  .newUsername {
+  /* .loginHeader {
     text-align: center;
-    color: #CC3E36;
+    align-items: center;
+    margin-top: 15px;
+  } */
+
+  .submitBtn {
+    background-color: #4CAF50;
+    padding: 8px 24px;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 180px;
+    color:white;
+    border:none;
+    border-radius:4px
+  }
+
+  #wwlbl_newLogin_newPassword {
+    padding-top: 10px
+  }
+
+  #newLogin {
+    text-align: center;
+  }
+
+  .wwlbl {
+    visibility: hidden;
+  }
+
+  .mainProfile {
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 40px;
   }

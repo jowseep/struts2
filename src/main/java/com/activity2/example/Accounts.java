@@ -8,14 +8,16 @@ public class Accounts {
     private String lastName;
     private String birthDate;
     private String bio;
+    private String accountType;
 
-    public Accounts(String username, String password, String firstName, String lastName, String birthDate, String bio) {
+    public Accounts(String username, String password, String firstName, String lastName, String birthDate, String bio, String accountType) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
         this.bio = bio;
+        this.accountType = accountType;
     }
 
     public String getUsername() {
@@ -64,6 +66,14 @@ public class Accounts {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
     }
 
 }
