@@ -94,6 +94,11 @@
     margin: auto;
   }
 
+  .login {
+    display: flex;
+    text-align: center;
+  }
+
   .fail {
     color: #CC3E36;
   }

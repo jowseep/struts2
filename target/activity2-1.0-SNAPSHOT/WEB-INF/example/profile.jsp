@@ -17,12 +17,19 @@
                 <s:a href="%{contact}">Contact</s:a>
                 <s:url var="about" action="About"></s:url>
                 <s:a href="%{about}">About</s:a>
-                <s:url var="login" action="Login"></s:url>
-                <s:a href="%{login}">Logout</s:a>
+                <s:url var="oldLogin" action="oldLogin"></s:url>
+                <s:a href="%{oldLogin}">Logout</s:a>
             </div>
         </header>
-        <main class="main">
-            <p class="maintext"><span class="success">Log in successful</span></p>
+        <main>
+            <h1>Firstname:</h1>
+            <span><s:property value="accountFound.firstName"/></span>
+            <h1>Lastname:</h1>
+            <span><s:property value="accountFound.lastName"/></span>
+            <h1>Birthdate:</h1>
+            <span><s:property value="accountFound.birthDate"/></span>
+            <h1>Bio:</h1>
+            <span><s:property value="accountFound.bio"/></span>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
