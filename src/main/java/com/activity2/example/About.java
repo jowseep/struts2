@@ -13,20 +13,6 @@ public class About extends ExampleSupport{
     public String execute() {
 
         setBlogDescription(selectSongs());
-
-        //setBlogDescription(selectSongs());
-
-        /*if(setBlogDescription(selectSongs()) == "1") {
-            return songs[0];
-        } else if(selectSongs() == "2") {
-            return songs[1];
-        } else if(selectSongs() == "3") {
-            return songs[2];
-        } else if(selectSongs() == "4" ) {
-            return songs[3];
-        } else if(selectSongs() == "5") {
-            return songs[4];
-        }*/
         
         return SUCCESS;
     }
@@ -35,23 +21,10 @@ public class About extends ExampleSupport{
     private String blogDescription = "The generated song is ";
 
     private String selectSongs() {
-        double num;
-        num = ((Math.random() * 4 - 1 + 1) + 1);
-        String generatedNum = String.valueOf((int)(num));
+        double num = ((Math.random() * 4 - 1 + 1) + 1);
+        String song = songs[(int) num];
 
-        if(generatedNum.equals("1")) {
-            return getBlogDescription() + songs[0];
-        } else if(generatedNum.equals("2")) {
-            return getBlogDescription() + songs[1];
-        } else if(generatedNum.equals("3")) {
-            return getBlogDescription() + songs[2];
-        } else if(generatedNum.equals("4")) {
-            return getBlogDescription() + songs[3];
-        } else if(generatedNum.equals("5")) {
-            return getBlogDescription() + songs[4];
-        }
-
-        return blogDescription;
+        return this.blogDescription + song;
     }
 
     public String getBlogDescription() {
