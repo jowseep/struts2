@@ -21,31 +21,73 @@
                 <s:a href="%{oldLogin}">Logout</s:a>
             </div>
         </header>
-        <main class="mainProfile">
-            <!-- since the matching information is already stored in accountFound, we can then access its attributes -->
-            <p>Firstname:</p>
-            <span><s:property value="accountFound.firstName"/></span>
-            <p>Lastname:</p>
-            <span><s:property value="accountFound.lastName"/></span>
-            <p>Birthdate:</p>
-            <span><s:property value="accountFound.birthDate"/></span>
-            <p>Bio:</p>
-            <span><s:property value="accountFound.bio"/></span>
-        </main>
-
-        <div class="mainProfile">
-            <s:set var="typeAccount" value="accountFound.accountType"/>
-            <h1><s:property value="#typeAccount"></s:property></h1>
-            <!-- ang accountFound.accountType is stored na siya sa typeAccount so no need to reiterate when accessing-->
-            <s:if test='%{#typeAccount == "admin"}'>
-                <p>Admin information</p>
-                <p>Number of booked seats: 754</p>
-                <p>Revenue over the last 2 months: P866,491.43</p>
-                <p>Growth for the last month: 101%</p>
-            </s:if>
-            <s:else>
-                <p>Refer a friend now!</p>
-            </s:else>
+        <div class="container">
+            <div class="row">
+                <!-- since the matching information is already stored in accountFound, we can then access its attributes -->
+                <div class="col-md-4 mt-1">
+                    <div class="card text-center sidebar">
+                        <div class="card-body">
+                            <img src="" alt="profile" class="rounded-circle" width="150">
+                            <div class="mt-3"></div>
+                            <h2>Username</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-1">
+                    <div class="card mb-3 content">
+                        <h1 class="m-3pt-3">About</h1>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Fullname: </h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <span><s:property value="accountFound.firstName"/></span>
+                                    <span><s:property value="accountFound.lastName"/></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Birthdate:</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <span><s:property value="accountFound.birthDate"/></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Bio</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    <span><s:property value="accountFound.bio"/></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 content">
+                        <s:set var="typeAccount" value="accountFound.accountType"/>
+                        <h1 class="m-3"><s:property value="#typeAccount"></s:property></h1>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!-- ang accountFound.accountType is stored na siya sa typeAccount so no need to reiterate when accessing-->
+                                    <s:if test='%{#typeAccount == "admin"}'>
+                                        <p>Admin information</p>
+                                        <p>Number of booked seats: 754</p>
+                                        <p>Revenue over the last 2 months: P866,491.43</p>
+                                        <p>Growth for the last month: 101%</p>
+                                    </s:if>
+                                    <s:else>
+                                        <p>Refer a friend now!</p>
+                                    </s:else>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
