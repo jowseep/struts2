@@ -20,6 +20,8 @@
                 <s:a href="%{about}">About</s:a>
                 <s:url var="oldLogin" action="oldLogin"></s:url>
                 <s:a href="%{oldLogin}">Login</s:a>
+                <s:url var="RegisterPage" action="RegisterPage"></s:url>
+                <s:a href="%{RegisterPage}">Register</s:a>
             </div>
         </header>      
       

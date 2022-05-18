@@ -6,4 +6,6 @@ com/activity2/example/HelloWorld.class
 com/activity2/example/ExampleSupport.class
 com/activity2/example/Accounts.class
 com/activity2/example/oldLogin.class
+com/activity2/example/Register.class
+com/activity2/example/RegisterPage.class
 com/activity2/example/Contact.class

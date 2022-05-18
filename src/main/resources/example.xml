@@ -42,8 +42,19 @@
             <result>/WEB-INF/example/newLogin.jsp</result>
         </action>
 
+        <!-- pwede ra diay ni siya i <a href="register.jsp">Register here</a> peste-->
+        <action name="RegisterPage" class="com.activity2.example.RegisterPage">
+            <result>/WEB-INF/example/Register.jsp</result>
+        </action>
+
         <action name="newLogin" class="com.activity2.example.newLogin">
             <result name="success">/WEB-INF/example/profile.jsp</result>
+            <result name="fail">/WEB-INF/example/fail.jsp</result>
+        </action>
+
+        <action name="Register" class="com.activity2.example.Register">
+            <result name="success">/WEB-INF/example/profile.jsp</result>
+            <result name="input">/WEB-INF/example/Register.jsp</result>
             <result name="fail">/WEB-INF/example/fail.jsp</result>
         </action>
 

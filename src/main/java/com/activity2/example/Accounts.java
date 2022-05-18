@@ -7,18 +7,18 @@ public class Accounts {
     private String firstName;
     private String lastName;
     private String birthDate;
-    private String bio;
-    private String accountType;
+    private String email;
 
-    public Accounts(String username, String password, String firstName, String lastName, String birthDate, String bio, String accountType) {
+    public Accounts(String username, String password, String firstName, String lastName, String birthDate, String email) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
-        this.bio = bio;
-        this.accountType = accountType;
+        this.email = email;
     }
+
+    public Accounts() {}
 
     public String getUsername() {
         return username;
@@ -60,20 +60,12 @@ public class Accounts {
         this.birthDate = birthDate;
     }
 
-    public String getBio() {
-        return bio;
+    public String getEmail() {
+        return email;
     }
 
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public String getAccountType() {
-        return accountType;
-    }
-
-    public void setAccountType(String accountType) {
-        this.accountType = accountType;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }

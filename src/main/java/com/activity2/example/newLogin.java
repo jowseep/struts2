@@ -16,11 +16,11 @@ public class newLogin{
         Accounts newAccount[] = new Accounts[5];
 
         //created objects using Accounts.java
-        newAccount[0] = new Accounts("joseph","joseph03","Joseph","Callao","May 03, 1998","Another day, another slay. Periodt.","admin");
-        newAccount[1] = new Accounts("kim","kim30","Kimberly","Osico","July 31, 1996","You only live once, hoe.","regular");
-        newAccount[2] = new Accounts("ishi","ishi02","Irish Clarence","Bernales","February 16, 1989","One step at a time, bitch.","regular");
-        newAccount[3] = new Accounts("jazzle","jazzle09","Jazzle Fe","Demapitan","September 24, 1997","Travel is life.","regular");
-        newAccount[4] = new Accounts("ketty","ketty01","Kieth","Albarando","January 25, 1998","Tiny <3","regular");
+        // newAccount[0] = new Accounts("joseph","joseph03","Joseph","Callao","May 03, 1998","Another day, another slay. Periodt.","admin");
+        // newAccount[1] = new Accounts("kim","kim30","Kimberly","Osico","July 31, 1996","You only live once, hoe.","regular");
+        // newAccount[2] = new Accounts("ishi","ishi02","Irish Clarence","Bernales","February 16, 1989","One step at a time, bitch.","regular");
+        // newAccount[3] = new Accounts("jazzle","jazzle09","Jazzle Fe","Demapitan","September 24, 1997","Travel is life.","regular");
+        // newAccount[4] = new Accounts("ketty","ketty01","Kieth","Albarando","January 25, 1998","Tiny <3","regular");
         
         //this loop is for me to find if an account exists
         for(int i=0;i<newAccount.length;i++) {
