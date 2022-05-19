@@ -10,9 +10,9 @@
       <header>
         <div class="topnav">
             <s:url var="home" action="index"></s:url>
-            <s:a href="%{home}">Home</s:a>
+            <s:a href="%{home}">Book</s:a>
             <s:url var="blog" action="Blog"></s:url>
-            <s:a href="%{blog}">Blog</s:a>
+            <s:a href="%{blog}">Explore</s:a>
             <s:url var="contact" action="Contact"></s:url>
             <s:a  class="active" href="%{contact}">Contact</s:a>
             <s:url var="about" action="About"></s:url>

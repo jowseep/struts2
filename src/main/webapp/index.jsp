@@ -11,9 +11,9 @@
         <header>
             <div class="topnav">
                 <s:url var="home" action="index"></s:url>
-                <s:a class="active" href="%{home}">Home</s:a>
+                <s:a class="active" href="%{home}">Book</s:a>
                 <s:url var="blog" action="Blog"></s:url>
-                <s:a href="%{blog}">Blog</s:a>
+                <s:a href="%{blog}">Explore</s:a>
                 <s:url var="contact" action="Contact"></s:url>
                 <s:a href="%{contact}">Contact</s:a>
                 <s:url var="about" action="About"></s:url>
@@ -27,19 +27,43 @@
             </div>
         </header>      
       
-        <main class="main">
-          <div class="maintext">
-            <h1 class="text1">This website is built from scratch with Struts 2.</h1>
-            <p class="lead">By creating this simple website, I was able to understand the basics of using Java in dynamic web application with the help of Struts 2. Here, I was able to learn how MVC works and how connected each part is.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-            </p>
+        <main>
+          <div class="inner-layer">
+            <div class="container">
+              <div class="row no-margin">
+                <div class="col-sm-7">
+                  <h1>Where do you wanna go</h1>
+                </div>
+                <div class="col-sm-5">
+                  <div class="form-data">
+                    <div class="form-head">
+                      <h1>Book Now</h1>
+                    </div>
+                    <div class="form-body">
+                      <div class="row form-row">
+                        <input type="text" class="form-control" placeholder="Departure City">
+                      </div>
+                      <div class="row form-row">
+                        <input type="text" class="form-control" placeholder="Destination City">
+                        </div>
+                      </div>
+                      <div class="row form-row">
+                        <input type="text" class="form-control" placeholder="Date and Time">
+                      </div>
+                      <div class="row form-row">
+                        <button class="btn btn-success btn-appointment">
+                          Book now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       
-        <footer class="mainfooter">
-            <a href="facebook.com/jowzeep" class="footer" >Facebook </a><span class="footer">|</span><span class="footer"> Instagram</span>
-        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
