@@ -32,7 +32,7 @@ public class Register extends ActionSupport{
             // ;INSERT INTO userinfo(firstname, lastname, birthdate, email) VALUES('"+account.getFirstName()+"','"+account.getLastName()+"','"+account.getBirthDate()+"','"+account.getEmail()+"')
             if (connection != null) {
                 statement = connection.createStatement();
-                String sql = "INSERT INTO user(username, password) VALUES('"+account.getUsername()+"','"+account.getPassword()+"')";
+                String sql = "INSERT INTO userinfo(firstname, lastname, birthdate, email, username, password) VALUES('"+account.getFirstName()+"','"+account.getLastName()+"','"+account.getBirthDate()+"','"+account.getEmail()+"','"+account.getUsername()+"','"+account.getPassword()+"')";
                 statement.executeUpdate(sql);
                 return true;
             } else {

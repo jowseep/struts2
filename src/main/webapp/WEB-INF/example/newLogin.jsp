@@ -24,8 +24,8 @@
 
     <main class="newloginbody">
         <s:form action="newLogin" class="signin" theme="css_xhtml">
-            <s:textfield key="newUsername" class="newUsername" placeholder="Username"/>
-            <s:password key="newPassword" placeholder="Password"/>
+            <s:textfield key="account.username" class="username" placeholder="Username"/>
+            <s:password key="account.password" class="password" placeholder="Password"/>
             <s:submit class="submitBtn"/>
         </s:form>
     </main>

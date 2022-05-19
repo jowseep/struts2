@@ -47,6 +47,10 @@
             <result>/WEB-INF/example/Register.jsp</result>
         </action>
 
+        <action name="List" class="com.activity2.example.List">
+            <result>/WEB-INF/example/List.jsp</result>
+        </action>
+
         <action name="newLogin" class="com.activity2.example.newLogin">
             <result name="success">/WEB-INF/example/profile.jsp</result>
             <result name="fail">/WEB-INF/example/fail.jsp</result>
