@@ -29,7 +29,9 @@
                         <div class="card-body">
                             <img src="" alt="profile" class="rounded-circle" width="150">
                             <div class="mt-3"></div>
-                            <h2>Username</h2>
+                            <h2>
+                                <span><s:property value="accounts.username"/></span>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -42,8 +44,8 @@
                                     <h5>Fullname: </h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span><s:property value="accountFound.firstName"/></span>
-                                    <span><s:property value="accountFound.lastName"/></span>
+                                    <span><s:property value="nameInput"/></span>
+                                    <span><s:property value="accounts.lastName"/></span>
                                 </div>
                             </div>
                             <hr>
@@ -52,16 +54,16 @@
                                     <h5>Birthdate:</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span><s:property value="accountFound.birthDate"/></span>
+                                    <span><s:property value="accounts.birthDate"/></span>
                                 </div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <h5>Bio</h5>
+                                    <h5>Email</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span><s:property value="accountFound.bio"/></span>
+                                    <span><s:property value="accounts.email"/></span>
                                 </div>
                             </div>
                         </div>

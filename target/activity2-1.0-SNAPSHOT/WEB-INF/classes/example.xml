@@ -47,8 +47,12 @@
             <result>/WEB-INF/example/Register.jsp</result>
         </action>
 
-        <action name="List" class="com.activity2.example.List">
+        <action name="List" class="com.activity2.example.List" method="execute">
             <result>/WEB-INF/example/List.jsp</result>
+        </action>
+
+        <action name="userAccount" class="com.activity2.example.List" method="userAccount">
+            <result name="success">/WEB-INF/example/tempProfile.jsp</result>
         </action>
 
         <action name="newLogin" class="com.activity2.example.newLogin">
@@ -57,6 +61,7 @@
         </action>
 
         <action name="Register" class="com.activity2.example.Register">
+            <interceptor-ref name="defaultStack"/>
             <result name="success">/WEB-INF/example/profile.jsp</result>
             <result name="input">/WEB-INF/example/Register.jsp</result>
             <result name="fail">/WEB-INF/example/fail.jsp</result>

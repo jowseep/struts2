@@ -21,7 +21,7 @@ public class About extends ExampleSupport{
     private String blogDescription = "The generated song is ";
 
     private String selectSongs() {
-        double num = ((Math.random() * 5 - 1 + 1) + 1);
+        double num = ((Math.random() * 4 - 1 + 1) + 1);
         String song = songs[(int) num];
 
         return this.blogDescription + song;

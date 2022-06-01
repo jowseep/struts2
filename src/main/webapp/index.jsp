@@ -32,7 +32,7 @@
             <div class="container">
               <div class="row no-margin">
                 <div class="col-sm-7">
-                  <h1>Where do you wanna go</h1>
+                  <img src="/Journey-pana.svg" alt="traveling" class="traveling">
                 </div>
                 <div class="col-sm-5">
                   <div class="form-data">

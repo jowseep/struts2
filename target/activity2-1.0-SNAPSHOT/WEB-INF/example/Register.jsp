@@ -24,12 +24,12 @@
 
     <main class="newloginbody">
         <s:form action="Register" class="signin" theme="css_xhtml">
-            <s:textfield key="account.firstName" class="firstName" placeholder="Firstname"/>
-            <s:textfield key="account.lastName" class="lastName" placeholder="Lastname"/>
-            <s:textfield key="account.username" class="username" placeholder="Username"/>
-            <s:password key="account.password" placeholder="password"/>
-            <s:textfield key="account.birthDate" class="birthDate" placeholder="Birthdate"/>
-            <s:textfield key="account.email" class="email" placeholder="Email"/>
+            <s:textfield name="account.firstName" class="firstName" placeholder="Firstname"/>
+            <s:textfield name="account.lastName" class="lastName" placeholder="Lastname"/>
+            <s:textfield name="account.username" class="username" placeholder="Username"/>
+            <s:password name="account.password" placeholder="password"/>
+            <s:textfield name="account.birthDate" class="birthDate" placeholder="Birthdate"/>
+            <s:textfield name="account.email" class="email" placeholder="Email"/>
             <s:submit class="submitBtn"/>
         </s:form>
     </main>

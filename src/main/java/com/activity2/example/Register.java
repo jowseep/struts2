@@ -11,7 +11,11 @@ public class Register extends ActionSupport{
     
     private Accounts account;
     private String error = "Random";
+    private String firstName, lastName, username, password, birthDate, email; 
 
+    public Register() {
+        
+    }
 
     public String execute() throws Exception {
         account = getAccount();
@@ -48,6 +52,32 @@ public class Register extends ActionSupport{
          }
     }
 
+    // public void validate(){
+    //     if (account.getFirstName().length() == 0) {
+    //         addFieldError("account.firstName", "First name is required, hoe.");
+    //     }
+        
+    //     if (account.getLastName().length() == 0) {
+    //         addFieldError("account.firstName", "Last name is required, hoe.");
+    //     }
+
+    //     if (account.getEmail().length() == 0) {
+    //         addFieldError("account.email", "Email is required, hoe.");
+    //     }
+    
+    //     if (account.getUsername().length() == 0) {
+    //         addFieldError("account.username", "Username is required, hoe.");
+    //     }
+
+    //     if (account.getPassword().length() == 0) {
+    //         addFieldError("account.password", "Password is required, hoe.");
+    //     }
+
+    //     if (account.getBirthDate().length() == 0) {
+    //         addFieldError("account.username", "Birthdate is required, hoe.");
+    //     }
+    // }
+
     public String getError() {
         return error;
     }
@@ -58,6 +88,54 @@ public class Register extends ActionSupport{
 
     public void setAccount(Accounts account) {
         this.account = account;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }
